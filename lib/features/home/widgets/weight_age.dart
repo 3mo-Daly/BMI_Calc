@@ -22,10 +22,10 @@ class WeightandHeight extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return Container(
-      width: width * 0.4,
+      width: width * 0.43,
       //height: height * 0.25,
       margin: const EdgeInsets.all(10),
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: ColorManager.secondary,
         borderRadius: BorderRadius.circular(10),

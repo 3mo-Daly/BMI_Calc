@@ -32,7 +32,7 @@ class GenderSelect extends StatelessWidget {
             color: selected ? ColorManager.accent : ColorManager.secondary,
           ),
           margin: const EdgeInsets.all(10),
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(10),
           child: Column(
             children: [
               Icon(

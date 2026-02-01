@@ -18,6 +18,7 @@ class HomeScreen extends StatelessWidget {
   // 1. STATE LIVES HERE NOW
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: ColorManager.scaffoldBackground,
       appBar: AppBar(
@@ -66,6 +67,7 @@ class HomeScreen extends StatelessWidget {
                       ),
 
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           // 3. PASSING DATA TO WEIGHT
                           Expanded(
@@ -121,7 +123,7 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 color: ColorManager.accent,
                 width: double.infinity,
-                height: 80.0,
+                height: 60.0,
                 margin: const EdgeInsets.only(top: 10),
                 child: const Center(
                     child: Text('Calculate', style: Styles.whitebold)),
