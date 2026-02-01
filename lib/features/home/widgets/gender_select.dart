@@ -17,13 +17,16 @@ class GenderSelect extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: InkWell(
-        onTap: () {
-          isSelected();
-          
-        },
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
+    return InkWell(
+      onTap: () {
+        isSelected();
+      },
+      child: Center(
         child: Container(
+          width: width * 0.43,
+          // height: height * 0.45,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: selected ? ColorManager.accent : ColorManager.secondary,
@@ -34,7 +37,7 @@ class GenderSelect extends StatelessWidget {
             children: [
               Icon(
                 iecon,
-                size: 100,
+                size: width * 0.25,
                 color: Colors.white,
               ),
               Text(

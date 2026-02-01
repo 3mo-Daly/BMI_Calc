@@ -35,6 +35,7 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       // Gender Row (Unchanged logic)
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           GenderSelect(
                             iecon: Icons.male,
