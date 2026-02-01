@@ -21,7 +21,8 @@ class ResultScreen extends StatelessWidget {
       backgroundColor: ColorManager.scaffoldBackground,
       appBar: AppBar(
         title: const Text('BMI CALCULATOR', style: Styles.whitebold),
-        backgroundColor: ColorManager.primary,
+        //backgroundColor: ColorManager.primary,
+        backgroundColor: Colors.red,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
