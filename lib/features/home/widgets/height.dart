@@ -15,7 +15,11 @@ class Height extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final sheight = MediaQuery.of(context).size.height;
     return Container(
+      width: width * 0.9,
+      //height: sheight * 0.25,
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
