@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../core/color_manager.dart';
 import '../../../core/styles.dart';
 
-
-
 class WeightandHeight extends StatelessWidget {
   final String label;
   final int value;
@@ -21,7 +19,11 @@ class WeightandHeight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     return Container(
+      width: width * 0.4,
+      //height: height * 0.25,
       margin: const EdgeInsets.all(10),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -42,7 +44,7 @@ class WeightandHeight extends StatelessWidget {
                 child: const Icon(Icons.remove, color: Colors.white),
               ),
               FloatingActionButton.small(
-                heroTag: "$label+", 
+                heroTag: "$label+",
                 onPressed: onIncrement,
                 backgroundColor: ColorManager.secondary,
                 child: const Icon(Icons.add, color: Colors.white),
